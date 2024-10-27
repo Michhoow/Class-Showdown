@@ -1,0 +1,14 @@
+C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\competencia\bin\Debug\net8.0\competencia.exe
+C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\competencia\bin\Debug\net8.0\competencia.deps.json
+C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\competencia\bin\Debug\net8.0\competencia.runtimeconfig.json
+C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\competencia\bin\Debug\net8.0\competencia.dll
+C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\competencia\bin\Debug\net8.0\competencia.pdb
+C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\competencia\obj\Debug\net8.0\competencia.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\competencia\obj\Debug\net8.0\competencia.AssemblyInfoInputs.cache
+C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\competencia\obj\Debug\net8.0\competencia.AssemblyInfo.cs
+C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\competencia\obj\Debug\net8.0\competencia.csproj.CoreCompileInputs.cache
+C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\competencia\obj\Debug\net8.0\competencia.dll
+C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\competencia\obj\Debug\net8.0\refint\competencia.dll
+C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\competencia\obj\Debug\net8.0\competencia.pdb
+C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\competencia\obj\Debug\net8.0\competencia.genruntimeconfig.cache
+C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\competencia\obj\Debug\net8.0\ref\competencia.dll
