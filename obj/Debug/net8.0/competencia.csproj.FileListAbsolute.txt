@@ -12,3 +12,12 @@ C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\competencia\obj\Debug\net
 C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\competencia\obj\Debug\net8.0\competencia.pdb
 C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\competencia\obj\Debug\net8.0\competencia.genruntimeconfig.cache
 C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\competencia\obj\Debug\net8.0\ref\competencia.dll
+C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\competencia\obj\Debug\net8.0\competencia.sourcelink.json
+C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\competencia\bin\Debug\net8.0\NAudio.dll
+C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\competencia\bin\Debug\net8.0\NAudio.Asio.dll
+C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\competencia\bin\Debug\net8.0\NAudio.Core.dll
+C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\competencia\bin\Debug\net8.0\NAudio.Midi.dll
+C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\competencia\bin\Debug\net8.0\NAudio.Wasapi.dll
+C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\competencia\bin\Debug\net8.0\NAudio.WinMM.dll
+C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\competencia\obj\Debug\net8.0\competencia.csproj.AssemblyReference.cache
+C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\competencia\obj\Debug\net8.0\competen.0E48395B.Up2Date
