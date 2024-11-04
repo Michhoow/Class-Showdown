@@ -21,3 +21,11 @@ C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\competencia\bin\Debug\net
 C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\competencia\bin\Debug\net8.0\NAudio.WinMM.dll
 C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\competencia\obj\Debug\net8.0\competencia.csproj.AssemblyReference.cache
 C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\competencia\obj\Debug\net8.0\competen.0E48395B.Up2Date
+C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\competencia\bin\Debug\net8.0\ClosedXML.dll
+C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\competencia\bin\Debug\net8.0\ClosedXML.Parser.dll
+C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\competencia\bin\Debug\net8.0\DocumentFormat.OpenXml.dll
+C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\competencia\bin\Debug\net8.0\DocumentFormat.OpenXml.Framework.dll
+C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\competencia\bin\Debug\net8.0\ExcelNumberFormat.dll
+C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\competencia\bin\Debug\net8.0\RBush.dll
+C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\competencia\bin\Debug\net8.0\SixLabors.Fonts.dll
+C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\competencia\bin\Debug\net8.0\System.IO.Packaging.dll
