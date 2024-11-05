@@ -7,26 +7,38 @@ using System.IO;
 using System.Threading;
 using System.Security.Cryptography;
 using System.Runtime.InteropServices;
+using DocumentFormat.OpenXml.Presentation;
+using System.Media;
+using DocumentFormat.OpenXml.Bibliography;
 
+    static void printslow3(string texto)
+    {
+        Random random = new Random();
+        Stopwatch lento = new Stopwatch();
+        lento.Start();
+        
+        using (var waveOut = new WaveOutEvent())
+        using (var audioFile = new AudioFileReader(@"C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\Letras sound\sans voice.wav"))
+        {
+            waveOut.Init(audioFile);
+            waveOut.Play();
+            
+            foreach (char caracter in texto)
+            {
+                
+                Console.ForegroundColor = ConsoleColor.Yellow;
 
+                Console.Write(caracter);
+                
+                
+                while (lento.Elapsed.TotalMilliseconds < 0.6)
+                { }
+                lento.Restart();
+            }
 
-// static void ReproducirMusicaAleatoria1(string musicas)
-// {
-  
-
-//         using (var waveOut = new WaveOutEvent())
-//         using (var audioFile = new AudioFileReader(musicas))
-//         {
-//             audioFile.Volume = 0.1f;
-
-//             waveOut.Init(audioFile);
-//             waveOut.Play();
-
-//             while (waveOut.PlaybackState == PlaybackState.Playing)
-//             {
-//             }
-//         }
-//     }
+            Console.ResetColor();
+        }
+    }
 
 
 string cargandosonido = @"C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\Efectos\Dial Up Internet - Sound Effect (HD).wav";
@@ -97,105 +109,28 @@ static void cargandofunc(string cargando)
                                                                 ░░░░░░                                                   ";
 
 
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < 1; i++)
     {
         Console.Clear();
         System.Console.WriteLine(cargarndo);
-        Thread.Sleep(130);
+        Thread.Sleep(50);
         Console.Clear();
         System.Console.WriteLine(cargando1);
-        Thread.Sleep(130                              );
+        Thread.Sleep(50                              );
         Console.Clear();
         System.Console.WriteLine(cargando2);
-        Thread.Sleep(130                              );
+        Thread.Sleep(50                              );
         Console.Clear();
         System.Console.WriteLine(cargando3);
-        Thread.Sleep(130                              );
+        Thread.Sleep(50                             );
         Console.Clear();
     }
-}
-static void printslow4(string texto)
-{
-    Random random = new Random();
-    int longitud = texto.Length;
-
-
-    for (int i = 0; i < longitud; i++)
-    {
-        Console.Write((char)random.Next(33, 126));
-    }
-    Console.SetCursorPosition(0, Console.CursorTop);
-
-
-    for (int i = 0; i < longitud; i++)
-    {
-        Stopwatch retardo = new Stopwatch();
-        retardo.Start();
-        Console.SetCursorPosition(i, Console.CursorTop);
-        Console.Write(texto[i]);
-        while (retardo.Elapsed.TotalMilliseconds < 0.1)
-        { }
-        using (var audioFile = new AudioFileReader(@"C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\Efectos\windows-98-click.wav"))
-        using (var outputDevice = new WaveOutEvent())
-        {
-            outputDevice.Init(audioFile);
-            outputDevice.Play();
-            audioFile.Volume = 1.0f;
-
-            while (outputDevice.PlaybackState == PlaybackState.Playing)
-            { }
-            retardo.Restart();
-
-        }
-
-
-
-
-    }
-}
-
-static void printslow5 (string texto)
-{
-    Random random = new Random();
-    int longitud = texto.Length;
-
-
-    for (int i = 0; i < longitud; i++)
-    {
-        Console.Write((char)random.Next(33, 126));
-    }
-    Console.SetCursorPosition(0, Console.CursorTop);
-
-
-    for (int i = 0; i < longitud; i++)
-    {
-        Stopwatch retardo = new Stopwatch();
-        retardo.Start();
-        Console.SetCursorPosition(i, Console.CursorTop);
-        Console.Write(texto[i]);
-        
-        while (retardo.Elapsed.TotalMilliseconds < 0.5)
-        {}
-        using (var waveOut = new WaveOutEvent())
-        using (var audioFile = new AudioFileReader(@"C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\Efectos\windows-98-click.wav"))
-    {
-        waveOut.Init(audioFile);
-        waveOut.Play();
-        //"C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\Efectos\windows-98-click.wav"))
-        
-    retardo.Restart();
-
-
-
-
-    }
-}
 }
 static void SeleccionarEstudiantes()
 {
 
 
-string [] lista = new string[]{@"ruben ricardo",@"angel rodriguez",@"janaric nicollet",@"luis miguel",@" reyes",@"benedit rivera",@"altagracia adam",@"alejandro rainier",@"franklin alexander",@"yerely yohanna",@"albin natan",@"alejandro veloz",@"angel isaac",@"angel junior",@"gregory antonio",@"homer osiris",@"jeisel barley",@"jeremy santiago",@"johaly concepcion",@"jose leonardo",@"leury brand",@"minnelli rodriguez",@"esteban josue",@"erick misael",@"enmanuel alcantara",@"jose gabriel",@"michael martinez",};
+string [] lista = new string[] {"ruben ricardo","angel rodriguez","janaric nicollet","luis miguel"," reyes","benedit rivera","altagracia adam","alejandro rainier","franklin alexander","yerely yohanna","albin natan","alejandro veloz","angel isaac","angel junior","gregory antonio","homer osiris","jeisel barley","jeremy santiago","johaly concepcion","jose leonardo","leury brand","minnelli rodriguez","esteban josue","erick misael","enmanuel alcantara","jose gabriel","michael martinez",};
 
 string[] estudiantesarte = new string[]{@" 
  ███████████              █████                            ███████████    ███                                   █████                                                             
@@ -432,8 +367,7 @@ string[] estudiantesarte = new string[]{@"
  ░░░░░░░░    ░░░░░░  ░░░░ ░░░░░  ░░░░░░░░ ░░░░░   ░░░░░███      ░░░░░░░░░   ░░░░░░  ░░░░ ░░░░░  ░░░░░░   ░░░░░░   ░███░░░   ░░░░░░  ░░░░░  ░░░░░░  ░░░░ ░░░░░ 
                                                   ███ ░███                                                        ░███                                        
                                                  ░░██████                                                         █████                                       
-                                                  ░░░░░░                                                         ░░░░░                                                                          
-                                                  ░░░░░░                                                         ░░░░░                                                            
+                                                  ░░░░░░                                                         ░░░░░                                                                                                                                  
 
 ",@" 
 
@@ -579,7 +513,7 @@ string[] estudiantesarte = new string[]{@"
 ░░█████ ░███████  ░███ ░███████ ░███ ░░░ ░███ ░░░  ░███ ░███ ░███ ░███ ░███   ███████  ░███ ░░░                                                                 
  ░░░░███░███░░░   ░███ ░███░░░  ░███  ███░███  ███ ░███ ░███ ░███ ░███ ░███  ███░░███  ░███                                                                     
  ██████ ░░██████  █████░░██████ ░░██████ ░░██████  █████░░██████  ████ █████░░████████ █████     ██                                                             
-░░░░░░   ░░░░░░  ░░░░░  ░░░░░░   ░░░░░░   ░░░░░░  ░░░░░  ░░░░░░  ░░░░ ░░░░░  ░░░░░░░░ ░░░░░     ░░                                                              ";
+░░░░░░   ░░░░░░  ░░░░░  ░░░░░░   ░░░░░░   ░░░░░░  ░░░░░  ░░░░░░  ░░░░ ░░░░░  ░░░░░░░░ ░░░░░                                                                  ";
         printslow(advice);
         Console.ResetColor();
         Console.ReadKey();
@@ -596,8 +530,8 @@ string[] estudiantesarte = new string[]{@"
         indice2 = random.Next(estudiantesdisponibles.Length);
     } while (indice1 == indice2);
 
-    string estudiante1 = estudiantesdisponibles[indice1].Trim();
-    string estudiante2 = estudiantesdisponibles[indice2].Trim();
+    string estudiante1 = estudiantesdisponibles[indice1];
+    string estudiante2 = estudiantesdisponibles[indice2];
     for (int i = 0; i < 22; i++)
     {
         Stopwatch animacion = new Stopwatch();
@@ -610,6 +544,7 @@ string[] estudiantesarte = new string[]{@"
 
         Console.ForegroundColor = ConsoleColor.Yellow;
         System.Console.WriteLine(@"
+ 
  ██████████                                                           ████  ████                █████                      
 ░░███░░░░███                                                         ░░███ ░░███               ░░███                       
  ░███   ░░███  ██████   █████   ██████   ████████  ████████   ██████  ░███  ░███   ██████    ███████   ██████  ████████    ██
@@ -632,7 +567,7 @@ System.Console.WriteLine(estudiantesarte[j]);
 ░░░░░        ░░░░░░░░  ░░░░░░  ░░░░░ ░░░░░ ░░░░░    ░░░░░   ░░░░░░░░  ░░░░░░░░  ░░░░░░  ░░░░░     ");
         System.Console.WriteLine(estudiantesarte[x]);                                                                                                                                   
         Console.ResetColor();
-        while (animacion.Elapsed.TotalMilliseconds < 8)
+        while (animacion.Elapsed.TotalMilliseconds < 5)
         { }
         animacion.Restart();
         using (var audioFile = new AudioFileReader(@"C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\Efectos\8-bit-jump_130bpm_C_minor.wav"))
@@ -668,118 +603,17 @@ System.Console.WriteLine(estudiantesarte[j]);
  ██████████  ░░██████  ██████ ░░████████ █████     █████    ░░██████  █████ █████░░████████░░████████░░██████  █████       ██
 ░░░░░░░░░░    ░░░░░░  ░░░░░░   ░░░░░░░░ ░░░░░     ░░░░░      ░░░░░░  ░░░░░ ░░░░░  ░░░░░░░░  ░░░░░░░░  ░░░░░░  ░░░░░     ");
     string estu1 = estudiante1;
-
-    if (estu1 == lista[0])
+for (int l = 0; l < lista.Length; l++)
     {
-        printslow(estudiantesarte[0]);
-    }
-    else if (estu1 == lista[1])
-    {
-        printslow(estudiantesarte[1]);
-    }
-    else if (estu1 == lista[2])
-    {
-        printslow(estudiantesarte[2]);
-    }
-    else if (estu1 == lista[3])
-    {
-        printslow(estudiantesarte[3]);
-    }
-    else if (estu1 == lista[4])
-    {
-        printslow(estudiantesarte[4]);
-    }
-    else if (estu1 == lista[5])
-    {
-        printslow(estudiantesarte[5]);
-    }
-    else if (estu1 == lista[6])
-    {
-        printslow(estudiantesarte[6]);
-    }
-    else if (estu1 == lista[7])
-    {
-        printslow(estudiantesarte[7]);
-    }
-    else if (estu1 == lista[8])
-    {
-        printslow(estudiantesarte[8]);
-    }
-    else if (estu1 == lista[9])
-    {
-        printslow(estudiantesarte[9]);
-    }
-    else if (estu1 == lista[10])
-    {
-        printslow(estudiantesarte[10]);
-    }
-    else if (estu1 == lista[11])
-    {
-        printslow(estudiantesarte[11]);
-    }
-    else if (estu1 == lista[12])
-    {
-        printslow(estudiantesarte[12]);
-    }
-    else if (estu1 == lista[13])
-    {
-        printslow(estudiantesarte[13]);
-    }
-    else if (estu1 == lista[14])
-    {
-        printslow(estudiantesarte[14]);
-    }
-    else if (estu1 == lista[15])
-    {
-        printslow(estudiantesarte[15]);
-    }
-    else if (estu1 == lista[16])
-    {
-        printslow(estudiantesarte[16]);
-    }
-    else if (estu1 == lista[17])
-    {
-        printslow(estudiantesarte[17]);
-    }
-    else if (estu1 == lista[18])
-    {
-        printslow(estudiantesarte[18]);
-    }
-    else if (estu1 == lista[19])
-    {
-        printslow(estudiantesarte[19]);
-    }
-    else if (estu1 == lista[20])
-    {
-        printslow(estudiantesarte[20]);
-    }
-    else if (estu1 == lista[21])
-    {
-        printslow(estudiantesarte[21]);
-    }
-    else if (estu1 == lista[22])
-    {
-        printslow(estudiantesarte[22]);
-    }
-    else if (estu1 == lista[24])
-    {
-        printslow(estudiantesarte[24]);
-    }
-    else if (estu1 == lista[25])
-    {
-        printslow(estudiantesarte[25]);
-    }
-    else if (estu1 == lista[26])
-    {
-        printslow(estudiantesarte[26]);
+        if (estu1 == lista[l] )
+        {
+            printslow3(estudiantesarte[l]);
+        }
     }
 
-    //printslow($"{estu1} ");
-
-    //System.Console.WriteLine("═══════════════════════════════════════════════");
     Console.ResetColor();
     Console.ForegroundColor = ConsoleColor.DarkCyan;
-    //System.Console.WriteLine("═══════════════════════════════════════════════");
+    System.Console.WriteLine();
     System.Console.WriteLine(@$"
  ███████████                     ███  ████   ███   █████                  █████                      
 ░░███░░░░░░█                    ░░░  ░░███  ░░░   ░░███                  ░░███                       
@@ -789,124 +623,19 @@ System.Console.WriteLine(estudiantesarte[j]);
  ░███  ░     ███░░███ ░███  ███ ░███  ░███  ░███   ░███ ███ ███░░███ ░███ ░███ ░███ ░███ ░███        
  █████      ░░████████░░██████  █████ █████ █████  ░░█████ ░░████████░░████████░░██████  █████       ██
 ░░░░░        ░░░░░░░░  ░░░░░░  ░░░░░ ░░░░░ ░░░░░    ░░░░░   ░░░░░░░░  ░░░░░░░░  ░░░░░░  ░░░░░     ");
+    
     string estu2 = estudiante2;
-    if (estu2 == lista[0])
+    for (int i = 0; i < lista.Length; i++)
     {
-        printslow(estudiantesarte[0]);
+        if (estu2 == lista[i] )
+        {
+            printslow3(estudiantesarte[i]);
+        }
     }
-    else if (estu2 == lista[1])
-    {
-        printslow(estudiantesarte[1]);
-    }
-    else if (estu2 == lista[2])
-    {
-        printslow(estudiantesarte[2]);
-    }
-    else if (estu2 == lista[3])
-    {
-        printslow(estudiantesarte[3]);
-    }
-    else if (estu2 == lista[4])
-    {
-        printslow(estudiantesarte[4]);
-    }
-    else if (estu2 == lista[5])
-    {
-        printslow(estudiantesarte[5]);
-    }
-    else if (estu2 == lista[6])
-    {
-        printslow(estudiantesarte[6]);
-    }
-    else if (estu2 == lista[7])
-    {
-        printslow(estudiantesarte[7]);
-    }
-    else if (estu2 == lista[8])
-    {
-        printslow(estudiantesarte[8]);
-    }
-    else if (estu2 == lista[9])
-    {
-        printslow(estudiantesarte[9]);
-    }
-    else if (estu2 == lista[10])
-    {
-        printslow(estudiantesarte[10]);
-    }
-    else if (estu2 == lista[11])
-    {
-        printslow(estudiantesarte[11]);
-    }
-    else if (estu2 == lista[12])
-    {
-        printslow(estudiantesarte[12]);
-    }
-    else if (estu2 == lista[13])
-    {
-        printslow(estudiantesarte[13]);
-    }
-    else if (estu2 == lista[14])
-    {
-        printslow(estudiantesarte[14]);
-    }
-    else if (estu2 == lista[15])
-    {
-        printslow(estudiantesarte[15]);
-    }
-    else if (estu2 == lista[16])
-    {
-        printslow(estudiantesarte[16]);
-    }
-    else if (estu2 == lista[17])
-    {
-        printslow(estudiantesarte[17]);
-    }
-    else if (estu2 == lista[18])
-    {
-        printslow(estudiantesarte[18]);
-    }
-    else if (estu2 == lista[19])
-    {
-        printslow(estudiantesarte[19]);
-    }
-    else if (estu2 == lista[20])
-    {
-        printslow(estudiantesarte[20]);
-    }
-    else if (estu2 == lista[21])
-    {
-        printslow(estudiantesarte[21]);
-    }
-    else if (estu2 == lista[22])
-    {
-        printslow(estudiantesarte[22]);
-    }
-    else if (estu2 == lista[24])
-    {
-        printslow(estudiantesarte[24]);
-    }
-    else if (estu2 == lista[25])
-    {
-        printslow(estudiantesarte[25]);
-    }
-    else if (estu2 == lista[26])
-    {
-        printslow(estudiantesarte[26]);
-    }
-    //printslow($"{estu2} ");
- 
-   //System.Console.WriteLine("═══════════════════════════════════════════════");
     Console.ResetColor();
-    System.Console.WriteLine();
-    System.Console.WriteLine();
-    System.Console.WriteLine();
-    System.Console.WriteLine();
-    System.Console.WriteLine();
-    System.Console.WriteLine();
     if (estudiante1 == "michael martinez")
     {
-        Console.ForegroundColor = ConsoleColor.Yellow;
+        Console.ForegroundColor = ConsoleColor.Blue;
         System.Console.WriteLine(@"
 ⣿⣿⣿⣿⣿⣿⣿⣿⡿⡫⣁⡴⣈⡼⣟⣭⣷⣿⡿⠿⡽⡟⠍⡙⢕⣢⣿⡟⣱⣿⣿⣿⣿⣿⠟⠋⡕⢼⣣⣴⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣻⢿⣩⣾⣿⡿⣿⣿⢿⣿⣿⣿⣿⡿⠛⣙⢄⣽⣿⣿⣿⡃⢹⣿⣿⣾⢫⢿⢇⣿⡟⣼⣿⡇⠯⠈⠰⣶⣾⣶⡄⢻⣿⣿⢎⣮⡹⠗⣠⣵⣶⣿⣿⣷⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
 ⣿⣿⣿⣿⣿⣿⡿⡫⣪⡾⣫⣾⣯⠾⠛⣋⣥⣶⡿⠟⣩⢔⣼⣾⣿⣿⠏⣼⣿⣿⢟⣿⡟⣡⢊⣼⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⣿⡿⣫⣷⣿⣿⣿⣫⢏⡼⣫⣾⣿⣿⣿⣃⢔⠟⣱⣿⣿⡿⣛⣿⣿⣿⣿⣿⣿⣏⡾⣼⡿⣸⣿⣿⠃⣴⠠⢹⣸⡿⣿⣇⡱⡊⣿⣎⣎⢷⡘⣻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
@@ -1011,6 +740,7 @@ System.Console.WriteLine(estudiantesarte[j]);
         Console.ResetColor();
     }
     System.Console.WriteLine();
+    System.Console.WriteLine();
     string press = @"
  ███████████                                                     █████                                  
 ░░███░░░░░███                                                   ░░███                                   
@@ -1028,16 +758,13 @@ System.Console.WriteLine(estudiantesarte[j]);
  ██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
 ");
     Console.ReadKey();
-
+ReproducirSonido(@"C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\Efectos\windows-98-click.wav");
     string verificar3 = $"{estudiante1} {estudiante2}{Environment.NewLine}";
     File.AppendAllText(verificar, verificar3);
 
     string registro2 = $"Desarrollador en vivo: {estudiante1}, Facilitador del ejercicio: {estudiante2}, Fecha: {ahora}{Environment.NewLine}";
     File.AppendAllText(registro, registro2);
 }
-
-
-
     static void printslow(string texto)
     {
         Random random = new Random();
@@ -1072,49 +799,6 @@ System.Console.WriteLine(estudiantesarte[j]);
             Console.ResetColor();
         }
     }
-
-static void printslow1(string texto)
-{
-    Random random = new Random();
-    Stopwatch lento = new Stopwatch();
-    lento.Start();
-    using (var waveOut = new WaveOutEvent())
-    using (var audioFile = new AudioFileReader(@"C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\Letras sound\sans voice.wav"))
-    {
-        waveOut.Init(audioFile);
-        waveOut.Play();
-        foreach (char caracter in texto)
-        {
-            Console.ForegroundColor = ConsoleColor.White;
-            System.Console.Write(caracter);
-            while (lento.Elapsed.TotalMilliseconds < 1)
-            { }
-            lento.Restart();
-        }
-    }
-}
-
-static void printslow2(string texto)
-{
-    Random random = new Random();
-    Stopwatch lento = new Stopwatch();
-    lento.Start();
-    using (var waveOut = new WaveOutEvent())
-    using (var audioFile = new AudioFileReader(@"C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\Letras sound\sans voice.wav"))
-    {
-        waveOut.Init(audioFile);
-        waveOut.Play();
-        foreach (char caracter in texto)
-        {
-            Console.ForegroundColor = ConsoleColor.White;
-            System.Console.Write(caracter);
-            while (lento.Elapsed.TotalMilliseconds < 1)
-            { }
-            lento.Restart();
-        }
-    }
-}
-
 string[] musicas = new string[]
 {
     @"C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\Muscias\We are! [8 bit cover] - One Piece OP 1.wav",
@@ -1268,6 +952,7 @@ Thread.Sleep(200);
 System.Console.WriteLine();
 System.Console.WriteLine();
 printslow(inicio);
+ReproducirSonido(rutasonido[2]);
 Console.ReadKey();
 Console.Clear();
 Console.ResetColor();
@@ -1349,5 +1034,3 @@ while (true)
         }
     }
 }
-
-
