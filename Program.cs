@@ -11,6 +11,71 @@ using DocumentFormat.OpenXml.Presentation;
 using System.Media;
 using DocumentFormat.OpenXml.Bibliography;
 
+static void saliendo()
+{
+    for (int t = 0; t < 7; t++)
+    {
+        Console.ForegroundColor= ConsoleColor.Yellow;
+        System.Console.WriteLine(@"
+  █████████            ████   ███                          █████         
+ ███░░░░░███          ░░███  ░░░                          ░░███          
+░███    ░░░   ██████   ░███  ████   ██████  ████████    ███████   ██████ 
+░░█████████  ░░░░░███  ░███ ░░███  ███░░███░░███░░███  ███░░███  ███░░███
+ ░░░░░░░░███  ███████  ░███  ░███ ░███████  ░███ ░███ ░███ ░███ ░███ ░███
+ ███    ░███ ███░░███  ░███  ░███ ░███░░░   ░███ ░███ ░███ ░███ ░███ ░███
+░░█████████ ░░████████ █████ █████░░██████  ████ █████░░████████░░██████ 
+ ░░░░░░░░░   ░░░░░░░░ ░░░░░ ░░░░░  ░░░░░░  ░░░░ ░░░░░  ░░░░░░░░  ░░░░░░  ");
+
+ Thread.Sleep(80);
+ Console.Clear();
+ System.Console.WriteLine(@"  
+  █████████            ████   ███                          █████            
+ ███░░░░░███          ░░███  ░░░                          ░░███             
+░███    ░░░   ██████   ░███  ████   ██████  ████████    ███████   ██████    
+░░█████████  ░░░░░███  ░███ ░░███  ███░░███░░███░░███  ███░░███  ███░░███   
+ ░░░░░░░░███  ███████  ░███  ░███ ░███████  ░███ ░███ ░███ ░███ ░███ ░███   
+ ███    ░███ ███░░███  ░███  ░███ ░███░░░   ░███ ░███ ░███ ░███ ░███ ░███   
+░░█████████ ░░████████ █████ █████░░██████  ████ █████░░████████░░██████  ██
+ ░░░░░░░░░   ░░░░░░░░ ░░░░░ ░░░░░  ░░░░░░  ░░░░ ░░░░░  ░░░░░░░░  ░░░░░░  ░░ ");
+
+ Thread.Sleep(80);
+ Console.Clear();
+ System.Console.WriteLine(@"
+  █████████            ████   ███                          █████               
+ ███░░░░░███          ░░███  ░░░                          ░░███                
+░███    ░░░   ██████   ░███  ████   ██████  ████████    ███████   ██████       
+░░█████████  ░░░░░███  ░███ ░░███  ███░░███░░███░░███  ███░░███  ███░░███      
+ ░░░░░░░░███  ███████  ░███  ░███ ░███████  ░███ ░███ ░███ ░███ ░███ ░███      
+ ███    ░███ ███░░███  ░███  ░███ ░███░░░   ░███ ░███ ░███ ░███ ░███ ░███      
+░░█████████ ░░████████ █████ █████░░██████  ████ █████░░████████░░██████  ██ ██
+ ░░░░░░░░░   ░░░░░░░░ ░░░░░ ░░░░░  ░░░░░░  ░░░░ ░░░░░  ░░░░░░░░  ░░░░░░  ░░ ░░ ");
+
+ Thread.Sleep(80);
+ Console.Clear();
+ System.Console.WriteLine(@"  
+  █████████            ████   ███                          █████                  
+ ███░░░░░███          ░░███  ░░░                          ░░███                   
+░███    ░░░   ██████   ░███  ████   ██████  ████████    ███████   ██████          
+░░█████████  ░░░░░███  ░███ ░░███  ███░░███░░███░░███  ███░░███  ███░░███         
+ ░░░░░░░░███  ███████  ░███  ░███ ░███████  ░███ ░███ ░███ ░███ ░███ ░███         
+ ███    ░███ ███░░███  ░███  ░███ ░███░░░   ░███ ░███ ░███ ░███ ░███ ░███         
+░░█████████ ░░████████ █████ █████░░██████  ████ █████░░████████░░██████  ██ ██ ██
+ ░░░░░░░░░   ░░░░░░░░ ░░░░░ ░░░░░  ░░░░░░  ░░░░ ░░░░░  ░░░░░░░░  ░░░░░░  ░░ ░░ ░░ ");
+    Thread.Sleep(80);
+    Console.Clear();
+    }
+}
+
+
+static void borrar()
+{
+string ruta = @"C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\Datos\verificacion.txt";
+
+File.WriteAllText(ruta, string.Empty);
+}
+
+
+
 static void arte()
 {
 
@@ -847,10 +912,8 @@ static void ReproducirMusicaAleatoria2(string musicas)
         waveOut.Init(audioFile);
         waveOut.Play();
 
-        while (waveOut.PlaybackState == PlaybackState.Playing)
-        {
-
-        }
+       Thread.Sleep(6500);
+    waveOut.Stop();
     }
 
 }
@@ -1052,34 +1115,34 @@ static void cargandofunc(string cargando)
     {
         Console.Clear();
         System.Console.WriteLine(cargarndo);
-        Thread.Sleep(165);
+        Thread.Sleep(80);
         Console.Clear();
         System.Console.WriteLine(cargando1);
-        Thread.Sleep(165);
+        Thread.Sleep(80);
         Console.Clear();
         System.Console.WriteLine(cargando2);
-        Thread.Sleep(165);
+        Thread.Sleep(80);
         Console.Clear();
         System.Console.WriteLine(cargando3);
-        Thread.Sleep(165);
+        Thread.Sleep(80);
         Console.Clear();
     }
     for (int h = 0; h < 9; h++)
     {
         Console.Clear();
         System.Console.WriteLine(faltapoco);
-        Thread.Sleep(165);
+        Thread.Sleep(80);
         Console.Clear();
         System.Console.WriteLine(faltapoco2);
-        Thread.Sleep(165);
+        Thread.Sleep(80);
         Console.Clear();
         System.Console.WriteLine(faltapoco3);
-        Thread.Sleep(165);
+        Thread.Sleep(80);
         Console.Clear();
         System.Console.WriteLine(faltapoco4);
-        Thread.Sleep(165);
+        Thread.Sleep(80);
         Console.Clear();
-
+        
     }
 }   
 
@@ -1682,6 +1745,21 @@ string[] rutasonido = new string[]
     @"C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\Efectos\windows-98-click.wav",
 };
 
+static void ReproducirSonido2(string rutasonido)
+{
+    using (var audioFile = new AudioFileReader(rutasonido))
+    using (var outputDevice = new WaveOutEvent())
+    {
+        outputDevice.Init(audioFile);
+        outputDevice.Play();
+        audioFile.Volume = 1.0f;
+
+        while (outputDevice.PlaybackState == PlaybackState.Playing)
+        {
+        }
+    }
+}
+
 static void ReproducirSonido(string rutasonido)
 {
     using (var audioFile = new AudioFileReader(rutasonido))
@@ -1742,7 +1820,19 @@ string[] menu1 = { @"
                                ░███░░░░░███  ░███ ░░█████   ░███    ░███ ░███ ░███ ░░░  ░███   ███████  ░███ 
                                ░███    ░███  ░███  ░░░░███  ░███ ███░███ ░███ ░███      ░███  ███░░███  ░███ 
                                █████   █████ █████ ██████   ░░█████ ░░██████  █████     █████░░████████ █████
-                              ░░░░░   ░░░░░ ░░░░░ ░░░░░░     ░░░░░   ░░░░░░  ░░░░░     ░░░░░  ░░░░░░░░ ░░░░░ ", @"
+                              ░░░░░   ░░░░░ ░░░░░ ░░░░░░     ░░░░░   ░░░░░░  ░░░░░     ░░░░░  ░░░░░░░░ ░░░░░ ",@"
+                            █████        ███                             ███                                                      ███           █████                      
+                           ░░███        ░░░                             ░░░                                                      ░░░           ░░███                       
+                            ░███        ████  █████████████   ████████  ████   ██████   ████████     ████████   ██████   ███████ ████   █████  ███████   ████████   ██████ 
+                            ░███       ░░███ ░░███░░███░░███ ░░███░░███░░███  ░░░░░███ ░░███░░███   ░░███░░███ ███░░███ ███░░███░░███  ███░░  ░░░███░   ░░███░░███ ███░░███
+                            ░███        ░███  ░███ ░███ ░███  ░███ ░███ ░███   ███████  ░███ ░░░     ░███ ░░░ ░███████ ░███ ░███ ░███ ░░█████   ░███     ░███ ░░░ ░███ ░███
+                            ░███      █ ░███  ░███ ░███ ░███  ░███ ░███ ░███  ███░░███  ░███         ░███     ░███░░░  ░███ ░███ ░███  ░░░░███  ░███ ███ ░███     ░███ ░███
+                            ███████████ █████ █████░███ █████ ░███████  █████░░████████ █████        █████    ░░██████ ░░███████ █████ ██████   ░░█████  █████    ░░██████ 
+                            ░░░░░░░░░░░ ░░░░░ ░░░░░ ░░░ ░░░░░  ░███░░░  ░░░░░  ░░░░░░░░ ░░░░░        ░░░░░      ░░░░░░   ░░░░░███░░░░░ ░░░░░░     ░░░░░  ░░░░░      ░░░░░░  
+                                                               ░███                                                      ███ ░███                                           
+                                                               █████                                                    ░░██████                                            
+                                                              ░░░░░                                                      ░░░░░░                                             ",
+                              @"
                                 █████████            ████   ███           
                                ███░░░░░███          ░░███  ░░░            
                               ░███    ░░░   ██████   ░███  ████  ████████ 
@@ -1842,12 +1932,12 @@ while (true)
 
     ConsoleKey key = Console.ReadKey(true).Key;
 
-    if (key == ConsoleKey.W && opciones1 > 0)
+    if (key == ConsoleKey.W && opciones1 > 0 || key == ConsoleKey.UpArrow && opciones1 > 0)
     {
         ReproducirSonido(rutasonido[2]);
         opciones1--;
     }
-    else if (key == ConsoleKey.S && opciones1 < menu1.Length - 1)
+    else if (key == ConsoleKey.S && opciones1 < menu1.Length - 1 || key == ConsoleKey.DownArrow && opciones1 < menu1.Length - 1)
     {
         ReproducirSonido(rutasonido[2]);
         opciones1++;
@@ -1860,17 +1950,16 @@ while (true)
         if (opciones1 == 0)
         {
             cargandofunc(cargandosonido);
-            Thread.Sleep(500);
-            ReproducirMusicaAleatoria2(@"C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\Efectos\Minecraft Anvil - Sound Effect.wav");
+            Thread.Sleep(100);
+            ReproducirSonido2(@"C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\Efectos\Minecraft Anvil - Sound Effect.wav");
             SeleccionarEstudiantes();
         }
         else if (opciones1 == 1)
         {
 
-            Thread.Sleep(300);
+
             cargandofunc(cargandosonido);
-            Thread.Sleep(700);
-            ReproducirMusicaAleatoria2(@"C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\Efectos\Minecraft Anvil - Sound Effect.wav");
+            ReproducirSonido2(@"C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\Efectos\Minecraft Anvil - Sound Effect.wav");
             mostrarhistorial();
             printslow(@"
  ███████████                                                     █████                                  
@@ -1890,9 +1979,58 @@ while (true)
             Console.ReadKey();
             ReproducirSonido(rutasonido[1]);
         }
-
         else if (opciones1 == 2)
         {
+            cargandofunc(cargandosonido);
+            ReproducirMusicaAleatoria2(@"C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\Efectos\Minecraft Anvil - Sound Effect.wav");
+            borrar();
+            string borrado = @"
+███████████                      ███           █████                          █████                                                █████         
+░░███░░░░░███                    ░░░           ░░███                          ░░███                                                ░░███          
+ ░███    ░███   ██████   ███████ ████   █████  ███████   ████████   ██████     ░███████   ██████  ████████  ████████   ██████    ███████   ██████ 
+ ░██████████   ███░░███ ███░░███░░███  ███░░  ░░░███░   ░░███░░███ ███░░███    ░███░░███ ███░░███░░███░░███░░███░░███ ░░░░░███  ███░░███  ███░░███
+ ░███░░░░░███ ░███████ ░███ ░███ ░███ ░░█████   ░███     ░███ ░░░ ░███ ░███    ░███ ░███░███ ░███ ░███ ░░░  ░███ ░░░   ███████ ░███ ░███ ░███ ░███
+ ░███    ░███ ░███░░░  ░███ ░███ ░███  ░░░░███  ░███ ███ ░███     ░███ ░███    ░███ ░███░███ ░███ ░███      ░███      ███░░███ ░███ ░███ ░███ ░███
+ █████   █████░░██████ ░░███████ █████ ██████   ░░█████  █████    ░░██████     ████████ ░░██████  █████     █████    ░░████████░░████████░░██████ 
+░░░░░   ░░░░░  ░░░░░░   ░░░░░███░░░░░ ░░░░░░     ░░░░░  ░░░░░      ░░░░░░     ░░░░░░░░   ░░░░░░  ░░░░░     ░░░░░      ░░░░░░░░  ░░░░░░░░  ░░░░░░  
+                        ███ ░███                                                                                                                  
+                       ░░██████                                                                                                                   
+                        ░░░░░░                                                                                                                    
+                       
+                       ███   █████                                                                    █████             ███                       
+                      ░░░   ░░███                                                                    ░░███             ░███                       
+  ██████  █████ █████ ████  ███████    ██████   █████   ██████   █████████████    ██████  ████████   ███████    ██████ ░███                       
+ ███░░███░░███ ░░███ ░░███ ░░░███░    ███░░███ ███░░   ░░░░░███ ░░███░░███░░███  ███░░███░░███░░███ ░░░███░    ███░░███░███                       
+░███████  ░░░█████░   ░███   ░███    ░███ ░███░░█████   ███████  ░███ ░███ ░███ ░███████  ░███ ░███   ░███    ░███████ ░███                       
+░███░░░    ███░░░███  ░███   ░███ ███░███ ░███ ░░░░███ ███░░███  ░███ ░███ ░███ ░███░░░   ░███ ░███   ░███ ███░███░░░  ░░░                        
+░░██████  █████ █████ █████  ░░█████ ░░██████  ██████ ░░████████ █████░███ █████░░██████  ████ █████  ░░█████ ░░██████  ███                       
+ ░░░░░░  ░░░░░ ░░░░░ ░░░░░    ░░░░░   ░░░░░░  ░░░░░░   ░░░░░░░░ ░░░░░ ░░░ ░░░░░  ░░░░░░  ░░░░ ░░░░░    ░░░░░   ░░░░░░  ░░░                        ";
+        printslow(borrado);
+        Thread.Sleep(2000);
+        Console.Clear();
+        ReproducirSonido2(@"C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\Efectos\Minecraft Anvil - Sound Effect.wav");
+        printslow(@"
+ ███████████                                                     █████                                  
+░░███░░░░░███                                                   ░░███                                   
+ ░███    ░███ ████████   ██████   █████   █████      ██████      ░███ █████  ██████  █████ ████         
+ ░██████████ ░░███░░███ ███░░███ ███░░   ███░░      ░░░░░███     ░███░░███  ███░░███░░███ ░███          
+ ░███░░░░░░   ░███ ░░░ ░███████ ░░█████ ░░█████      ███████     ░██████░  ░███████  ░███ ░███          
+ ░███         ░███     ░███░░░   ░░░░███ ░░░░███    ███░░███     ░███░░███ ░███░░░   ░███ ░███          
+ █████        █████    ░░██████  ██████  ██████    ░░████████    ████ █████░░██████  ░░███████  ██ ██ ██
+░░░░░        ░░░░░      ░░░░░░  ░░░░░░  ░░░░░░      ░░░░░░░░    ░░░░ ░░░░░  ░░░░░░    ░░░░░███ ░░ ░░ ░░ 
+                                                                                      ███ ░███          
+                                                                                     ░░██████           
+                                                                                      ░░░░░░            " + @"
+                                                                     
+ ██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+");
+       Console.ReadKey(); 
+       ReproducirSonido(rutasonido[1]);
+        }
+        else if (opciones1 == 3)
+        {
+            saliendo();
+            ReproducirSonido2(@"C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\Efectos\Minecraft Anvil - Sound Effect.wav");
             break;
         }
     }
