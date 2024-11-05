@@ -1015,7 +1015,7 @@ string[] artes = new string[] { @"
    Console.ForegroundColor = ConsoleColor.White;
     if (w != artes.Length - 1)
     {
-    printslow(artes[w]);
+    printslow2(artes[w]);
     Console.ResetColor();
     }
     else
@@ -1815,6 +1815,41 @@ static void SeleccionarEstudiantes()
     File.AppendAllText(registro, registro2);
 }
 
+static void printslow2(string texto)
+{
+    Random random = new Random();
+    Stopwatch lento = new Stopwatch();
+    lento.Start();
+
+    using (var waveOut = new WaveOutEvent())
+    using (var audioFile = new AudioFileReader(@"C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\Letras sound\sans voice.wav"))
+    {
+        waveOut.Init(audioFile);
+        waveOut.Play();
+
+        foreach (char caracter in texto)
+        {
+            if (caracter == '⠈')
+            {
+                Console.ForegroundColor = (ConsoleColor)random.Next(1, 16);
+            }
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.Yellow;
+            }
+
+            Console.Write(caracter);
+
+
+            while (lento.Elapsed.TotalMilliseconds < 0.2)
+            { }
+            lento.Restart();
+        }
+
+        Console.ResetColor();
+    }
+}
+
 static void printslow(string texto)
 {
     Random random = new Random();
@@ -2135,7 +2170,6 @@ while (true)
 ░░██████  █████ █████ █████  ░░█████ ░░██████  ██████ ░░████████ █████░███ █████░░██████  ████ █████  ░░█████ ░░██████  ███                       
  ░░░░░░  ░░░░░ ░░░░░ ░░░░░    ░░░░░   ░░░░░░  ░░░░░░   ░░░░░░░░ ░░░░░ ░░░ ░░░░░  ░░░░░░  ░░░░ ░░░░░    ░░░░░   ░░░░░░  ░░░                        ";
         printslow(borrado);
-        Thread.Sleep(2000);
         Console.Clear();
         ReproducirSonido2(@"C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\Efectos\Minecraft Anvil - Sound Effect.wav");
         printslow(@"
