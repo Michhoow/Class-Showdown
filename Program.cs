@@ -3033,7 +3033,7 @@ Console.Clear();
     System.Console.WriteLine();
     System.Console.WriteLine();
     string press = @"
-    
+
  ███████████                                                     █████                                  
 ░░███░░░░░███                                                   ░░███                                   
  ░███    ░███ ████████   ██████   █████   █████      ██████      ░███ █████  ██████  █████ ████         
@@ -3378,6 +3378,7 @@ while (true)
             ReproducirSonido2(@"C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\Efectos\Minecraft Anvil - Sound Effect.wav");
             mostrarhistorial();
             printslow(@"
+            
  ███████████                                                     █████                                  
 ░░███░░░░░███                                                   ░░███                                   
  ░███    ░███ ████████   ██████   █████   █████      ██████      ░███ █████  ██████  █████ ████         
@@ -3401,6 +3402,10 @@ while (true)
             Thread.Sleep(800);
             borrar();
             string borrado = @"
+
+
+
+
 ███████████                      ███           █████                          █████                                                █████         
 ░░███░░░░░███                    ░░░           ░░███                          ░░███                                                ░░███          
  ░███    ░███   ██████   ███████ ████   █████  ███████   ████████   ██████     ░███████   ██████  ████████  ████████   ██████    ███████   ██████ 
