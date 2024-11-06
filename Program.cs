@@ -2972,7 +2972,7 @@ Console.Clear();
     string estu1 = estudiante1;
     for (int l = 0; l < lista.Length; l++)
     {
-        if (estu1 == lista[l])
+        if (estudiante1 == lista[l])
         {
             printslow3(estudiantesarte[l]);
         }
@@ -3007,7 +3007,7 @@ Console.Clear();
     string estu2 = estudiante2;
     for (int i = 0; i < lista.Length; i++)
     {
-        if (estu2 == lista[i])
+        if (estudiante2 == lista[i])
         {
                     Console.ForegroundColor = ConsoleColor.Cyan;
 
