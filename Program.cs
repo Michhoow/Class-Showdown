@@ -1166,7 +1166,7 @@ string caminando16 = @"
 ⠀⢀⣴⣿⣿⣿⣿⣿⡿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⣿⣿⣿⣿⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃
 ⣴⣿⣿⣿⣿⣿⣿⣋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣿⣿⣿⣿⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣘⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡁⠀";
 
-
+Task.Run(() => ReproducirMusicaAleatoria2(@"C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\Efectos\calamardo.wav"));
 for (int o = 0; o <= 4; o++)
 {
 Console.ForegroundColor = ConsoleColor.Yellow;
@@ -2112,8 +2112,8 @@ string[] artes = new string[] { @"
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡠⠒⢁⣀⣤⣶⡿⣡⠚⢡⠞⣡⠀⠴⠟⣊⠵⢊⠟⡠⣿⠃⢀⠎⠀⣴⠟⣡⡾⢋⣰⡿⠀⠀⣠⣾⡟⢀⠏⢠⢾⢋⣿⠣⣴⡅⠀⢠⡟⠁⠀⡌⢀⠏⢰⣿⠀⡼⠀⢀⣾⠃⠀⣼⠂⡄⠀⣸⢿⠀⠀⢠⠟⡆⠈⡇⣿⡘⢸⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣤⠶⠯⠒⠊⠉⢠⣼⣿⠜⣁⣴⣯⠞⠁⠀⠐⠋⠁⡰⢡⣾⣵⠃⠀⣸⣶⡾⣋⣾⢛⣆⣾⡿⠁⢀⣾⡏⡼⠀⠈⣠⡿⠃⡜⡏⣰⢹⠀⣰⠏⠀⠀⣸⠃⡞⠀⣏⡇⡜⡤⠀⡞⢀⡿⢸⡏⢸⠀⣰⠸⡿⠀⠀⡼⠀⣷⡄⢣⢸⢧⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⡅⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠀⠀⠀⠀⠀⠀⢘⡽⢿⣡⣾⡟⣩⠃⡰⠂⠀⠀⢀⠞⡴⣱⣿⠿⠀⣰⣿⠿⢊⠟⣀⡎⣼⣿⠃⣠⣿⡟⣸⠃⠀⣰⡟⢡⡾⢱⣡⢣⠃⣼⢧⠆⠀⢠⡿⢠⠃⣸⢸⡝⢰⠁⡜⣤⣾⢅⡾⠀⡇⢀⡇⡇⡗⠀⠀⡇⠀⣽⣧⠘⡸⣬⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⠿⣷⠾⠋⣹⡼⠁⣼⠁⠀⠀⡴⣡⠞⢠⣿⣏⡇⣾⠟⡏⢀⠏⣴⡟⢰⡿⡏⣰⠏⣼⣱⡟⠀⣰⠟⡰⢻⠃⣾⣿⠃⣰⣿⠏⡜⢡⣾⠇⡜⢠⣧⢿⢠⠇⡸⣰⣟⡿⣸⠃⢰⠁⣼⠀⡇⡇⠀⢸⠇⡀⢚⢿⡄⢳⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀      [ Nah,⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀    ⠀⠀⠀⠃⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣞⡥⠞⠁⠀⣰⡿⢁⡾⠋⠀⣠⢚⣾⣡⢴⣿⣿⣿⢰⡏⢰⢁⡎⡼⣿⢡⠏⠙⣷⡏⢰⣿⣿⠃⣰⣯⠞⢁⣷⣾⣿⠃⣰⣿⠏⡜⢠⢿⡿⢰⠃⣾⠃⡏⠘⣰⣱⡿⣽⣷⡏⢀⡏⢰⡿⡄⡇⣧⡀⢸⣀⡧⢹⠈⣿⡈⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀      I'd Win. ] ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡄⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⠿⣷⠾⠋⣹⡼⠁⣼⠁⠀⠀⡴⣡⠞⢠⣿⣏⡇⣾⠟⡏⢀⠏⣴⡟⢰⡿⡏⣰⠏⣼⣱⡟⠀⣰⠟⡰⢻⠃⣾⣿⠃⣰⣿⠏⡜⢡⣾⠇⡜⢠⣧⢿⢠⠇⡸⣰⣟⡿⣸⠃⢰⠁⣼⠀⡇⡇⠀⢸⠇⡀⢚⢿⡄⢳⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀   [ Domain Expansion ]⠀⠀⠀⠀    ⠀⠀⠀⠃⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣞⡥⠞⠁⠀⣰⡿⢁⡾⠋⠀⣠⢚⣾⣡⢴⣿⣿⣿⢰⡏⢰⢁⡎⡼⣿⢡⠏⠙⣷⡏⢰⣿⣿⠃⣰⣯⠞⢁⣷⣾⣿⠃⣰⣿⠏⡜⢠⢿⡿⢰⠃⣾⠃⡏⠘⣰⣱⡿⣽⣷⡏⢀⡏⢰⡿⡄⡇⣧⡀⢸⣀⡧⢹⠈⣿⡈⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀                ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡄⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠉⠁⠀⠀⢀⣠⣿⣡⡞⠁⡠⠎⣠⣾⠏⣠⣾⢉⡿⡇⣾⢁⣿⡟⣸⢱⡏⡼⠀⡼⢹⢀⠏⣟⡞⣠⡿⠃⠀⡼⢡⡿⠃⣼⣿⡝⡸⣠⠋⣼⡇⡎⣸⠏⢀⡇⣰⡿⢡⢓⡟⢸⠁⣼⣇⣿⢳⣃⣧⣿⠃⣾⣿⣷⠏⠉⣻⣷⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡐⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡟⠉⠉⠻⣍⣯⣠⠾⣿⡏⡴⣣⡇⣾⡇⣇⡟⡸⣼⢻⣿⡏⢙⠇⡜⠓⣮⡼⢼⣧⣧⣟⠁⢀⡞⢀⠞⢀⡞⢡⣿⢡⡿⠃⠀⣿⡿⢀⠏⠀⢸⣴⣟⣠⣾⡾⠴⡟⢸⣿⡾⣹⢸⡸⢹⠏⢰⢻⣿⠃⢀⡼⣿⡧⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡆⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣽⣷⣄⠀⠀⢹⣿⠁⣰⡿⣰⡽⣿⣵⡇⠹⣬⡇⢧⣏⣿⣿⠁⢸⠟⠀⠀⣿⠃⠀⡼⠋⠙⠻⠿⢷⣞⣠⠎⠀⣾⠇⡿⠁⠀⢸⣿⣿⣎⡴⠾⣿⠛⠉⢱⡟⠀⣼⡇⡞⣿⠁⣇⣷⡧⣼⣸⣾⣽⣿⢀⡾⣳⢹⣿⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀
@@ -2222,6 +2222,7 @@ string[] artes = new string[] { @"
     Random random2 = new Random();
     Random random = new Random();
     int w = random.Next(artes.Length);
+    w = random.Next(artes.Length);
    Console.ForegroundColor = ConsoleColor.White;
     printslow2(artes[w]);
 
@@ -2230,16 +2231,12 @@ string[] artes = new string[] { @"
 static void ReproducirMusicaAleatoria2(string musicas)
 {
 
-
-
-
-
     string musicSelected = musicas;
 
     using (var waveOut = new WaveOutEvent())
     using (var audioFile = new AudioFileReader(musicSelected))
     {
-        audioFile.Volume = 0.1f;
+        audioFile.Volume = 1f;
 
         waveOut.Init(audioFile);
         waveOut.Play();
@@ -3129,6 +3126,11 @@ string[] musicas = new string[]
     @"C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\Muscias\nanatsu no taizai opening sprite version 8 bits music.wav",
     @"C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\Muscias\DAN DA DAN Opening - Otonoke [8bit cover].wav",
     @"C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\Muscias\The Legend of Zelda - A Link To The Past - Fairy Fountain.wav",
+    @"C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\Muscias\Jujutsu kaisen season 2 opening.wav",
+    @"C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\Muscias\JJBZA Blody Stream.wav",
+    @"C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\Muscias\Chainsaw.wav",
+    @"C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\Muscias\Dragon Soul [8 bit cover] - Dragon Ball Z Kai OP 1 (ft. kenzonflo).wav",
+    @"C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\Muscias\One Piece Opening 26 - ASSU! [8 bit cover].wav",
 };
 
 string[] rutasonido = new string[]
@@ -3181,7 +3183,7 @@ static void ReproducirMusicaAleatoria(string[] musicas)
         using (var waveOut = new WaveOutEvent())
         using (var audioFile = new AudioFileReader(musicSelected))
         {
-            audioFile.Volume = 0.1f;
+            audioFile.Volume = 0.5f;
 
             waveOut.Init(audioFile);
             waveOut.Play();
@@ -3408,6 +3410,24 @@ while (true)
         Console.Clear();
         ReproducirSonido2(@"C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\Efectos\Minecraft Anvil - Sound Effect.wav");
         printslow(@"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  ███████████                                                     █████                                  
 ░░███░░░░░███                                                   ░░███                                   
  ░███    ░███ ████████   ██████   █████   █████      ██████      ░███ █████  ██████  █████ ████         
@@ -3427,7 +3447,7 @@ while (true)
         }
         else if (opciones1 == 3)
         {
-            ReproducirSonido(rutasonido[1]);
+            ReproducirSonido(rutasonido[2]);
             Console.Clear();
             saliendo();
             ReproducirSonido2(@"C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\Efectos\Minecraft Anvil - Sound Effect.wav");
