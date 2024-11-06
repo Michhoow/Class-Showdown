@@ -3359,7 +3359,7 @@ while (true)
     }
     else if (key == ConsoleKey.Enter)
     {
-        // Console.WriteLine();
+
         ReproducirSonido(rutasonido[3]);
 
         if (opciones1 == 0)
@@ -3378,7 +3378,6 @@ while (true)
             ReproducirSonido2(@"C:\Users\micha\OneDrive\Escritorio\Codigos\Competencia\Efectos\Minecraft Anvil - Sound Effect.wav");
             mostrarhistorial();
             printslow(@"
-            
  ███████████                                                     █████                                  
 ░░███░░░░░███                                                   ░░███                                   
  ░███    ░███ ████████   ██████   █████   █████      ██████      ░███ █████  ██████  █████ ████         
@@ -3405,7 +3404,7 @@ while (true)
 
 
 
-
+            
 ███████████                      ███           █████                          █████                                                █████         
 ░░███░░░░░███                    ░░░           ░░███                          ░░███                                                ░░███          
  ░███    ░███   ██████   ███████ ████   █████  ███████   ████████   ██████     ░███████   ██████  ████████  ████████   ██████    ███████   ██████ 
