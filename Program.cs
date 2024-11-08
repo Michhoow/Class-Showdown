@@ -1963,7 +1963,7 @@ static void printslow4(string texto)
         foreach (char caracter in texto)
         {
 
-            Console.ForegroundColor = ConsoleColor.Green;
+            Console.ForegroundColor = ConsoleColor.Yellow;
 
             Console.Write(caracter);
 
@@ -3079,7 +3079,7 @@ string[] rolesregist = File.ReadAllLines(rolesestudiantes)
         if (rolesregist.Length < 2)
     {
        
-        Console.ForegroundColor = ConsoleColor.Green;
+        Console.ForegroundColor = ConsoleColor.Yellow;
         string advice2 = @"
  ██████   █████             █████                                                                                                              
 ░░██████ ░░███             ░░███                                                                                                               
@@ -3145,7 +3145,6 @@ string[] rolesregist = File.ReadAllLines(rolesestudiantes)
     if (estudiantesdisponibles.Length < 2)
     {
         Console.ForegroundColor = ConsoleColor.Yellow;
-        Console.ForegroundColor = ConsoleColor.Green;
         string advice = @"
 
 
@@ -3247,7 +3246,7 @@ string[] rolesregist = File.ReadAllLines(rolesestudiantes)
         System.Console.WriteLine(estudiantesarte[j]);
         System.Console.WriteLine();
         Console.ResetColor();
-        Console.ForegroundColor = ConsoleColor.Green;
+        Console.ForegroundColor = ConsoleColor.Yellow;
         System.Console.WriteLine(ConvertirATextoAscii2(rolesregist[p]));
         System.Console.WriteLine(estudiantesarte[x]);
         Console.ResetColor();
@@ -3785,14 +3784,14 @@ string[] menu4 = {@"
     ░░███     ░░██████  █████        █████    ░░██████  █████░░██████  ██████ 
      ░░░       ░░░░░░  ░░░░░        ░░░░░      ░░░░░░  ░░░░░  ░░░░░░  ░░░░░░  ", @"
                
- ███████████                                                  
-░░███░░░░░███                                                 
- ░███    ░███  ██████  ████████  ████████   ██████   ████████ 
- ░██████████  ███░░███░░███░░███░░███░░███ ░░░░░███ ░░███░░███
- ░███░░░░░███░███ ░███ ░███ ░░░  ░███ ░░░   ███████  ░███ ░░░ 
- ░███    ░███░███ ░███ ░███      ░███      ███░░███  ░███     
- ███████████ ░░██████  █████     █████    ░░████████ █████    
-░░░░░░░░░░░   ░░░░░░  ░░░░░     ░░░░░      ░░░░░░░░ ░░░░░     ",@"
+ ███████████                                                                         ████                  
+░░███░░░░░███                                                                       ░░███                  
+ ░███    ░███  ██████  ████████  ████████   ██████   ████████     ████████   ██████  ░███   ██████   █████ 
+ ░██████████  ███░░███░░███░░███░░███░░███ ░░░░░███ ░░███░░███   ░░███░░███ ███░░███ ░███  ███░░███ ███░░  
+ ░███░░░░░███░███ ░███ ░███ ░░░  ░███ ░░░   ███████  ░███ ░░░     ░███ ░░░ ░███ ░███ ░███ ░███████ ░░█████ 
+ ░███    ░███░███ ░███ ░███      ░███      ███░░███  ░███         ░███     ░███ ░███ ░███ ░███░░░   ░░░░███
+ ███████████ ░░██████  █████     █████    ░░████████ █████        █████    ░░██████  █████░░██████  ██████ 
+░░░░░░░░░░░   ░░░░░░  ░░░░░     ░░░░░      ░░░░░░░░ ░░░░░        ░░░░░      ░░░░░░  ░░░░░  ░░░░░░  ░░░░░░  ",@"
 
  █████        ███                             ███                                            ████                  
 ░░███        ░░░                             ░░░                                            ░░███                  
